@@ -1,0 +1,131 @@
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  .App {
+    text-align: center;
+    padding: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  /* Heading Styles */
+  h1, h3 {
+    margin: 20px 0;
+    font-weight: 500;
+  }
+  
+  h1 {
+    color: #34495e;
+    font-size: 1.8rem;
+  }
+  
+  h3 {
+    color: #e74c3c;
+    font-size: 1.2rem;
+  }
+  
+  /* Card styles */
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* UseFetchHookCheck Component Styles */
+  .UseFetchHookCheck .product {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .UseFetchHookCheck .product:last-child {
+    border-bottom: none;
+  }
+  
+  .UseFetchHookCheck .product-title {
+    font-size: 1.2rem;
+    color: #3498db;
+    margin: 10px 0;
+  }
+  
+  .UseFetchHookCheck .loading,
+  .UseFetchHookCheck .error {
+    font-size: 1.1rem;
+    margin-top: 20px;
+  }
+  
+  /* UseOnClickOutsideTest Component Styles */
+  .UseOnClickOutsideTest .content {
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  
+  .UseOnClickOutsideTest .content.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .UseOnClickOutsideTest button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .UseOnClickOutsideTest button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* UseWindowResizeTest Component Styles */
+  .UseWindowResizeTest {
+    margin: 20px 0;
+  }
+  
+  .UseWindowResizeTest h1 {
+    color: #34495e;
+  }
+  
+  .UseWindowResizeTest p {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 600px) {
+    .App {
+      padding: 15px;
+    }
+  
+    .card, .UseOnClickOutsideTest .content, .UseWindowResizeTest {
+      margin: 15px 0;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    h3, p {
+      font-size: 1rem;
+    }
+  }
+  
